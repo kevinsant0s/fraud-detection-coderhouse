@@ -1,0 +1,368 @@
+Dataframe name: Customer Data
+First 5 rows of the dataset
+   CustomerID           Name  Age       Address
+0        1001  Customer 1001   54  Address 1001
+1        1002  Customer 1002   35  Address 1002
+2        1003  Customer 1003   40  Address 1003
+3        1004  Customer 1004   30  Address 1004
+4        1005  Customer 1005   46  Address 1005
+Data types of the columns
+CustomerID     int64
+Name          object
+Age            int64
+Address       object
+dtype: object
+Number of rows and columns
+(1000, 4)
+Columns names
+Index(['CustomerID', 'Name', 'Age', 'Address'], dtype='object')
+Number of missing values
+CustomerID    0
+Name          0
+Age           0
+Address       0
+dtype: int64
+Summary statistics
+        CustomerID          Age
+count  1000.000000  1000.000000
+mean   1500.500000    39.892000
+std     288.819436    13.524394
+min    1001.000000    18.000000
+25%    1250.750000    28.000000
+50%    1500.500000    39.000000
+75%    1750.250000    51.000000
+max    2000.000000    64.000000
+Unique values
+CustomerID    1000
+Name          1000
+Age             47
+Address       1000
+dtype: int64
+===============================================
+Dataframe name: Account Activity
+First 5 rows of the dataset
+   CustomerID  AccountBalance   LastLogin
+0        1001     9507.272060  2022-01-01
+1        1002     7408.704536  2022-01-02
+2        1003     1715.321989  2022-01-03
+3        1004     3101.509134  2022-01-04
+4        1005     5405.766914  2022-01-05
+Data types of the columns
+CustomerID          int64
+AccountBalance    float64
+LastLogin          object
+dtype: object
+Number of rows and columns
+(1000, 3)
+Columns names
+Index(['CustomerID', 'AccountBalance', 'LastLogin'], dtype='object')
+Number of missing values
+CustomerID        0
+AccountBalance    0
+LastLogin         0
+dtype: int64
+Summary statistics
+        CustomerID  AccountBalance
+count  1000.000000     1000.000000
+mean   1500.500000     5558.067698
+std     288.819436     2596.890997
+min    1001.000000     1009.248716
+25%    1250.750000     3297.255763
+50%    1500.500000     5569.672709
+75%    1750.250000     7910.029699
+max    2000.000000     9999.776239
+Unique values
+CustomerID        1000
+AccountBalance    1000
+LastLogin         1000
+dtype: int64
+===============================================
+Dataframe name: Fraud Indicators
+First 5 rows of the dataset
+   TransactionID  FraudIndicator
+0              1               0
+1              2               0
+2              3               0
+3              4               0
+4              5               0
+Data types of the columns
+TransactionID     int64
+FraudIndicator    int64
+dtype: object
+Number of rows and columns
+(1000, 2)
+Columns names
+Index(['TransactionID', 'FraudIndicator'], dtype='object')
+Number of missing values
+TransactionID     0
+FraudIndicator    0
+dtype: int64
+Summary statistics
+       TransactionID  FraudIndicator
+count    1000.000000     1000.000000
+mean      500.500000        0.045000
+std       288.819436        0.207408
+min         1.000000        0.000000
+25%       250.750000        0.000000
+50%       500.500000        0.000000
+75%       750.250000        0.000000
+max      1000.000000        1.000000
+Unique values
+TransactionID     1000
+FraudIndicator       2
+dtype: int64
+===============================================
+Dataframe name: Suspicious Activity
+First 5 rows of the dataset
+   CustomerID  SuspiciousFlag
+0        1001               0
+1        1002               0
+2        1003               0
+3        1004               0
+4        1005               0
+Data types of the columns
+CustomerID        int64
+SuspiciousFlag    int64
+dtype: object
+Number of rows and columns
+(1000, 2)
+Columns names
+Index(['CustomerID', 'SuspiciousFlag'], dtype='object')
+Number of missing values
+CustomerID        0
+SuspiciousFlag    0
+dtype: int64
+Summary statistics
+        CustomerID  SuspiciousFlag
+count  1000.000000     1000.000000
+mean   1500.500000        0.023000
+std     288.819436        0.149978
+min    1001.000000        0.000000
+25%    1250.750000        0.000000
+50%    1500.500000        0.000000
+75%    1750.250000        0.000000
+max    2000.000000        1.000000
+Unique values
+CustomerID        1000
+SuspiciousFlag       2
+dtype: int64
+===============================================
+Dataframe name: Merchant Data
+First 5 rows of the dataset
+   MerchantID   MerchantName       Location
+0        2001  Merchant 2001  Location 2001
+1        2002  Merchant 2002  Location 2002
+2        2003  Merchant 2003  Location 2003
+3        2004  Merchant 2004  Location 2004
+4        2005  Merchant 2005  Location 2005
+Data types of the columns
+MerchantID       int64
+MerchantName    object
+Location        object
+dtype: object
+Number of rows and columns
+(1000, 3)
+Columns names
+Index(['MerchantID', 'MerchantName', 'Location'], dtype='object')
+Number of missing values
+MerchantID      0
+MerchantName    0
+Location        0
+dtype: int64
+Summary statistics
+        MerchantID
+count  1000.000000
+mean   2500.500000
+std     288.819436
+min    2001.000000
+25%    2250.750000
+50%    2500.500000
+75%    2750.250000
+max    3000.000000
+Unique values
+MerchantID      1000
+MerchantName    1000
+Location        1000
+dtype: int64
+===============================================
+Dataframe name: Transaction Category Labels
+First 5 rows of the dataset
+   TransactionID Category
+0              1    Other
+1              2   Online
+2              3   Travel
+3              4   Travel
+4              5    Other
+Data types of the columns
+TransactionID     int64
+Category         object
+dtype: object
+Number of rows and columns
+(1000, 2)
+Columns names
+Index(['TransactionID', 'Category'], dtype='object')
+Number of missing values
+TransactionID    0
+Category         0
+dtype: int64
+Summary statistics
+       TransactionID
+count    1000.000000
+mean      500.500000
+std       288.819436
+min         1.000000
+25%       250.750000
+50%       500.500000
+75%       750.250000
+max      1000.000000
+Unique values
+TransactionID    1000
+Category            5
+dtype: int64
+===============================================
+Dataframe name: Amount Data
+First 5 rows of the dataset
+   TransactionID  TransactionAmount
+0              1          79.413607
+1              2          12.053087
+2              3          33.310357
+3              4          46.121117
+4              5          54.051618
+Data types of the columns
+TransactionID          int64
+TransactionAmount    float64
+dtype: object
+Number of rows and columns
+(1000, 2)
+Columns names
+Index(['TransactionID', 'TransactionAmount'], dtype='object')
+Number of missing values
+TransactionID        0
+TransactionAmount    0
+dtype: int64
+Summary statistics
+       TransactionID  TransactionAmount
+count    1000.000000        1000.000000
+mean      500.500000          55.853826
+std       288.819436          26.093606
+min         1.000000          10.057864
+25%       250.750000          33.875129
+50%       500.500000          55.958313
+75%       750.250000          77.589391
+max      1000.000000          99.784323
+Unique values
+TransactionID        1000
+TransactionAmount    1000
+dtype: int64
+===============================================
+Dataframe name: Anomaly Scores
+First 5 rows of the dataset
+   TransactionID  AnomalyScore
+0              1      0.686699
+1              2      0.081749
+2              3      0.023857
+3              4      0.876994
+4              5      0.034059
+Data types of the columns
+TransactionID      int64
+AnomalyScore     float64
+dtype: object
+Number of rows and columns
+(1000, 2)
+Columns names
+Index(['TransactionID', 'AnomalyScore'], dtype='object')
+Number of missing values
+TransactionID    0
+AnomalyScore     0
+dtype: int64
+Summary statistics
+       TransactionID  AnomalyScore
+count    1000.000000   1000.000000
+mean      500.500000      0.492282
+std       288.819436      0.288423
+min         1.000000      0.000234
+25%       250.750000      0.251802
+50%       500.500000      0.490242
+75%       750.250000      0.741888
+max      1000.000000      0.999047
+Unique values
+TransactionID    1000
+AnomalyScore     1000
+dtype: int64
+===============================================
+Dataframe name: Transaction Metadata
+First 5 rows of the dataset
+   TransactionID            Timestamp  MerchantID
+0              1  2022-01-01 00:00:00        2701
+1              2  2022-01-01 01:00:00        2070
+2              3  2022-01-01 02:00:00        2238
+3              4  2022-01-01 03:00:00        2879
+4              5  2022-01-01 04:00:00        2966
+Data types of the columns
+TransactionID     int64
+Timestamp        object
+MerchantID        int64
+dtype: object
+Number of rows and columns
+(1000, 3)
+Columns names
+Index(['TransactionID', 'Timestamp', 'MerchantID'], dtype='object')
+Number of missing values
+TransactionID    0
+Timestamp        0
+MerchantID       0
+dtype: int64
+Summary statistics
+       TransactionID   MerchantID
+count    1000.000000  1000.000000
+mean      500.500000  2504.701000
+std       288.819436   288.414883
+min         1.000000  2001.000000
+25%       250.750000  2254.500000
+50%       500.500000  2500.500000
+75%       750.250000  2761.250000
+max      1000.000000  3000.000000
+Unique values
+TransactionID    1000
+Timestamp        1000
+MerchantID        651
+dtype: int64
+===============================================
+Dataframe name: Transaction Records
+First 5 rows of the dataset
+   TransactionID     Amount  CustomerID
+0              1  55.530334        1952
+1              2  12.881180        1027
+2              3  50.176322        1955
+3              4  41.634001        1796
+4              5  78.122853        1946
+Data types of the columns
+TransactionID      int64
+Amount           float64
+CustomerID         int64
+dtype: object
+Number of rows and columns
+(1000, 3)
+Columns names
+Index(['TransactionID', 'Amount', 'CustomerID'], dtype='object')
+Number of missing values
+TransactionID    0
+Amount           0
+CustomerID       0
+dtype: int64
+Summary statistics
+       TransactionID       Amount   CustomerID
+count    1000.000000  1000.000000  1000.000000
+mean      500.500000    55.394871  1496.626000
+std       288.819436    25.070809   289.229047
+min         1.000000    10.006933  1001.000000
+25%       250.750000    34.502315  1239.000000
+50%       500.500000    57.844325  1501.000000
+75%       750.250000    75.858576  1739.250000
+max      1000.000000    99.887410  2000.000000
+Unique values
+TransactionID    1000
+Amount           1000
+CustomerID        636
+dtype: int64
+===============================================
